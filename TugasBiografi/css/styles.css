@@ -1,0 +1,497 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body
+    {
+  color: #40514E;
+  margin: 0;
+  background-color: #c2f3f7;
+  text-align: center;
+  font-family: 'Merriweather', serif, sans-serif;
+     }
+
+h1 {
+   margin: 0 auto 0 auto;
+   font-family: 'Sacramento', cursive;
+   font-size: 5.625rem;
+   color: #66BFBF;
+
+ }
+
+ h2
+ {
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.5rem;
+   color: #11999E;
+   font-weight: normal;
+   padding-bottom: 10px;
+ }
+
+ h3
+ {
+   font-family: 'Montserrat', sans-serif;
+   color: #11999E;
+ }
+
+.mountain
+{
+ padding: 0;
+}
+
+.profile-img
+{
+  margin-top: 25px;
+  width:200px;
+
+}
+
+p
+{
+  line-height: 2;
+}
+
+hr
+{
+  border: dotted #EAF6F6;
+  border-bottom: none;
+  width: 4%;
+  margin: 200px auto;
+}
+
+a
+{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 10px;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #EAF6F6;
+}
+
+.contact-message
+{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+
+.intro
+{
+  width: 20%;
+  margin:auto;
+}
+
+.skills-animation
+{
+  border-radius: 100%;
+  width: 250px;
+  float: left;
+}
+
+.other-skills-image
+{
+  border-radius: 100%;
+  width: 200px;
+  float: right;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.contact-animation
+{
+  border-radius: 100%;
+  width: 250px;
+}
+
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+
+    }
+
+.middle-container
+{
+  margin: 100px 0;
+}
+
+.bottom-container
+{
+  background-color: #66BFBF;
+  padding: 50px 50px 20px;
+}
+
+.top-cloud
+{
+  position: absolute;
+  right: 340px;
+  top: 40px;
+}
+.bottom-cloud
+{
+  position: absolute;
+  left: 250px;
+
+}
+.skill-row
+{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: middle;
+
+}
+
+.btn {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #31a8db;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.8s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+
+.container {
+  width: 175px;
+  height: 175px;
+  background-color: #ABC4AA;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 5px 5px 0 0 #675D50;
+}
+
+.plate {
+  width: fit-content;
+}
+
+.plate .black,
+.plate .white,
+.plate .center,
+.plate .border {
+  border-radius: 100%;
+}
+
+.container,
+.plate .black,
+.plate .white,
+.plate .border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plate .black {
+  width: 150px;
+  height: 150px;
+  background-color: #675D50;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.plate .white {
+  width: 70px;
+  height: 70px;
+  background-color: #F3DEBA;
+}
+
+.plate .center {
+  width: 20px;
+  height: 20px;
+  background-color: #675D50;
+}
+
+.plate .border {
+  width: 111px;
+  height: 111px;
+  border-top: 3px solid #F3DEBA;
+  border-bottom: 3px solid #F3DEBA;
+  border-left: 3px solid #675D50;
+  border-right: 3px solid #675D50;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  rotate: -45deg;
+}
+
+.player .circ {
+  width: 25px;
+  height: 25px;
+  background-color: #F3DEBA;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.player .rect {
+  width: 10px;
+  height: 55px;
+  background-color: #F3DEBA;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 245px;
+  height: 270px;
+  perspective: 1000px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  padding: 5px;
+  border-radius: 2em;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #240d29;
+  border: 4px solid #c2f3f7;
+}
+
+.profile-image {
+  background-color: transparent;
+  border: none;
+  margin-top: 45px;
+  border-radius: 5em;
+  width: 120px;
+  height: 120px;
+  margin-left: 50px;
+}
+
+.pfp {
+  border-radius: 35em;
+  fill: #c2f3f7;
+}
+
+.name {
+  margin-top: 15px;
+  font-size: 27px;
+  color: #c2f3f7;
+  font-weight: bold;
+}
+
+.flip-card-back {
+  background-color: #240d29;
+  border: 4px solid #c2f3f7;
+  transform: rotateY(180deg);
+  padding: 11px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white
+}
+
+.socialbar {
+  background-color: transparent;
+  border-radius: 3em;
+  width: 90%;
+  padding: 14px;
+  margin-top: 11px;
+  margin-left: 10px;
+  word-spacing: 24px;
+  color: white;
+}
+
+.socialbar svg {
+  transition: 0.4s;
+  width: 20px;
+  height: 20px;
+  color: #c2f3f7
+}
+
+.socialbar svg:hover {
+  color: white;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+/* Google Font Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+nav.sticky{
+  padding: 15px 20px;
+  
+}
+nav .nav-content{
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo a{
+  font-weight: 500;
+  font-size: 20px;
+  color: #4070f4;
+}
+nav.sticky .logo a{
+  color: #0a1a63;
+}
+.nav-content .nav-links{
+  display: flex;
+}
+.nav-content .nav-links li{
+  list-style: none;
+  margin: 0 8px;
+}
+ .nav-links li a{
+  text-decoration: none;
+  color: #0E2431;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+ .nav-links li a:hover{
+   color: #0a1a63;
+ }
+ nav.sticky .nav-links li a{
+   color: #0a1a63;
+   transition: all 0.4s ease;
+}
+ nav.sticky .nav-links li a:hover{
+  color: #0E2431;
+}
+.home{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.text{
+  text-align: justify;
+  padding: 40px 80px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
